@@ -40,14 +40,14 @@ class CheckParenthes {
         
     }
 
-    public static void main (String[] args) {
+    // public static void main (String[] args) {
 		
-		String s="()[{}()]";
-		if(isParenthesisBalanced(s)==true)
-		System.out.println("True");
-		else
-		System.out.println("False");
-	}
+	// 	String s="()[{}()]";
+	// 	if(isParenthesisBalanced(s)==true)
+	// 	System.out.println("True");
+	// 	else
+	// 	System.out.println("False");
+	// }
 
 }
 
