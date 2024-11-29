@@ -1,5 +1,4 @@
 
-
 class J_Sort0s_1s_2s{
     static void sort012(int[] arr) {
         int n = arr.length;
