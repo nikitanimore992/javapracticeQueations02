@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 class L_lengthOfLongestSubstring{
     public int lengthOfLongest(String s) {
+        @SuppressWarnings("Convert2Diamond")
         HashMap < Character, Integer > mpp = new HashMap < Character, Integer > ();
 
         int left = 0, right = 0;
