@@ -37,6 +37,7 @@ class P_IsomorphicString{
         // All characters are mapped consistently
         return true;
     }
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         P_IsomorphicString obj = new P_IsomorphicString();
         String s1 = "egg";
