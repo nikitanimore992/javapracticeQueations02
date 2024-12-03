@@ -1,0 +1,6 @@
+
+
+
+class P_IsomorphicString{
+    
+}
