@@ -22,7 +22,8 @@ class removeDuplicates{
     public static void main(String[] args) {
         removeDuplicates obj = new removeDuplicates();
         int[] nums = {0, 0, 1, 1, 2, 3, 3};
-        int newLength = obj.removeDuplicates(nums);
+        int newLength = 4;
+        newLength = obj.removeDuplicates(nums);
         System.out.println(newLength);
     }
 }
