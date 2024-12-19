@@ -41,5 +41,7 @@ class A_ElectionWinner{
 
         String winner = findWinner(arr, n);
         System.out.println("Winner of the election: " + winner);
+
+        
     }
 }
