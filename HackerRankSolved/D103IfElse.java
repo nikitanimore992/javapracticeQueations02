@@ -11,7 +11,7 @@
 
 import java.util.Scanner;
 
-class IfElse{
+class D103IfElse{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
