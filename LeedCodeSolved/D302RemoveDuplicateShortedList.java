@@ -1,5 +1,3 @@
-class D302RemoveDuplicateShortedList{
-  
 class ListNode {
     int val;
     ListNode next;
@@ -8,39 +6,37 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-class D302RemoveDuplicateShortedList{
+public class D302RemoveDuplicateShortedList {
+
+    // Recursive method to remove duplicates completely
     public ListNode deleteDuplicates(ListNode head) {
-        if(head == null || head.next == null) return head;
-        
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode prev = dummy; // Pointer to the last node before the sublist of duplicates
-        ListNode current = head; // Pointer to traverse the list
-        
-        while(current != null) {
-            // Move current until the end of duplicates sublist
-            while(current.next != null && current.val == current.next.val) {
-                current = current.next;
+        if (head == null || head.next == null) return head;
+
+        if (head.val == head.next.val) {
+            // Skip all nodes with this value
+            while (head.next != null && head.val == head.next.val) {
+                head = head.next;
             }
-            
-            // If prev's next is still current, no duplicates were found
-            if(prev.next == current) {
-                prev = prev.next; // Move prev to next node
-            } else {
-                // Skip all duplicates
-                prev.next = current.next;
-            }
-            
-            // Move current forward
-            current = current.next;
+            return deleteDuplicates(head.next); // Recur for rest
+        } else {
+            head.next = deleteDuplicates(head.next); // No duplicate at head
+            return head;
         }
-        
-        return dummy.next; // Return the modified list, skipping the dummy node
     }
+
+    // Helper method to print linked list
+    public void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         D302RemoveDuplicateShortedList solver = new D302RemoveDuplicateShortedList();
-        
-        // Example usage:
+
+        // Create example list: 1->2->3->3->4->4->5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
@@ -48,14 +44,13 @@ class D302RemoveDuplicateShortedList{
         head.next.next.next.next = new ListNode(4);
         head.next.next.next.next.next = new ListNode(4);
         head.next.next.next.next.next.next = new ListNode(5);
-        
+
+        System.out.print("Original list: ");
+        solver.printList(head);
+
         ListNode result = solver.deleteDuplicates(head);
-        
-        // Print the result
-        while(result != null) {
-            System.out.print(result.val + " ");
-            result = result.next;
-        }
+
+        System.out.print("After removing duplicates: ");
+        solver.printList(result);
     }
-}
 }
