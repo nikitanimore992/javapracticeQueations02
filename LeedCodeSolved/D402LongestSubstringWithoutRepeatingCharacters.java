@@ -1,0 +1,3 @@
+class D402LongestSubstringWithoutRepeatingCharacters{
+    
+}
