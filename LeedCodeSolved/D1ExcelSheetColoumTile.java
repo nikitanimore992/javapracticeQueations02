@@ -1,6 +1,6 @@
 
 
-class D102ExcelSheetColoumTile {
+class D1ExcelSheetColoumTile {
     public String convertToTitle(int columnNumber) {
         StringBuilder res = new StringBuilder();
 
@@ -15,7 +15,7 @@ class D102ExcelSheetColoumTile {
     }
 
     public static void main(String[] args) {
-        D102ExcelSheetColoumTile converter = new D102ExcelSheetColoumTile();
+        D1ExcelSheetColoumTile converter = new D1ExcelSheetColoumTile();
         
         System.out.println("1 - " + converter.convertToTitle(1));    // A
         System.out.println("26 - " + converter.convertToTitle(26));  // Z

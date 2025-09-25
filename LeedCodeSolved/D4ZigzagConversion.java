@@ -1,4 +1,4 @@
-class D403ZigzagConversion{
+class D4ZigzagConversion{
      public String convert(String s, int numRows) {
         if (numRows == 1 || s.length() <= numRows) {
             return s;
@@ -31,7 +31,7 @@ class D403ZigzagConversion{
         return result;
     }
     public static void main(String[] args) {
-        D403ZigzagConversion solver = new D403ZigzagConversion();
+        D4ZigzagConversion solver = new D4ZigzagConversion();
 
         System.out.println(solver.convert("PAYPALISHIRING", 3)); // "PAHNAPLSIIGYIR"
         System.out.println(solver.convert("PAYPALISHIRING", 4)); // "PINALSIGYAHRPI"

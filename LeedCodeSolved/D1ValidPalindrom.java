@@ -1,6 +1,6 @@
 
 
-class D101ValidPalindrom{
+class D1ValidPalindrom{
     public boolean isPalindrome(String s) {
         int l = 0;
         int r = s.length() - 1;
@@ -19,7 +19,7 @@ class D101ValidPalindrom{
         return true;
       }
       public static void main(String[] args){
-        D101ValidPalindrom checker = new D101ValidPalindrom();
+        D1ValidPalindrom checker = new D1ValidPalindrom();
 
         String test1 = "A man, a plan, a canal: Panama";
         String test2 = "Hello World";

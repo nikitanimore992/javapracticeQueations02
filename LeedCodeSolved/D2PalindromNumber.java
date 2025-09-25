@@ -1,4 +1,4 @@
-class D201PalindromNumber {
+class D2PalindromNumber {
     public boolean isPalindrome(int x) {
         if (x < 0) return false; // negative numbers not palindrome
 
@@ -15,7 +15,7 @@ class D201PalindromNumber {
     }
 
     public static void main(String[] args) {
-        D201PalindromNumber solver = new D201PalindromNumber();
+        D2PalindromNumber solver = new D2PalindromNumber();
 
         int[] testNumbers = {121, 123, 1001, 10, -121};
 

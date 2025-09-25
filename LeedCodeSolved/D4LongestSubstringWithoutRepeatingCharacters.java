@@ -1,6 +1,6 @@
 
 import java.util.*;
-class D402LongestSubstringWithoutRepeatingCharacters{
+class D4LongestSubstringWithoutRepeatingCharacters{
     public int lengthOfLongestSubstring(String s) {
         Set<Character> set = new HashSet<>();
         int left = 0, maxLen = 0;
@@ -22,7 +22,7 @@ class D402LongestSubstringWithoutRepeatingCharacters{
     }
 
     public static void main(String[] args) {
-        D402LongestSubstringWithoutRepeatingCharacters solver = new D402LongestSubstringWithoutRepeatingCharacters();
+        D4LongestSubstringWithoutRepeatingCharacters solver = new D4LongestSubstringWithoutRepeatingCharacters();
 
         System.out.println(solver.lengthOfLongestSubstring("abcabcbb")); // 3
         System.out.println(solver.lengthOfLongestSubstring("bbbbb"));   // 1

@@ -1,4 +1,4 @@
-class D303mergShortedArray{
+class D3mergShortedArray{
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1; // Pointer for last element in nums1's valid part
         int j = n - 1; // Pointer for last element in nums2
@@ -28,7 +28,7 @@ class D303mergShortedArray{
 
     // Optional main method to test
     public static void main(String[] args) {
-        D303mergShortedArray sol = new D303mergShortedArray();
+        D3mergShortedArray sol = new D3mergShortedArray();
         int[] nums1 = {1,2,3,0,0,0};
         int[] nums2 = {2,5,6};
         int m = 3, n = 3;

@@ -1,4 +1,4 @@
-class D301ClibingStair {
+class D3ClibingStair {
     public int climbStairs(int n) {
         if (n <= 2) {
             return n;
@@ -12,7 +12,7 @@ class D301ClibingStair {
         return second;
     }
     public static void main(String[] args) {
-        D301ClibingStair Nikita = new D301ClibingStair();
+        D3ClibingStair Nikita = new D3ClibingStair();
         
         System.out.println("Climbing 2 stairs: " + Nikita.climbStairs(2)); // 2
         System.out.println("Climbing 3 stairs: " + Nikita.climbStairs(3)); // 3

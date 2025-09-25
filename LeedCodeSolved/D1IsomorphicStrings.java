@@ -1,6 +1,6 @@
 import java.util.*;
 
-class D103IsomorphicStrings {
+class D1IsomorphicStrings{
     public boolean isIsomorphic(String s, String t) {
         Map<Character, Integer> charToIndex_s = new HashMap<>();
         Map<Character, Integer> charToIndex_t = new HashMap<>();
@@ -13,7 +13,7 @@ class D103IsomorphicStrings {
     }
 
     public static void main(String[] args) {
-        D103IsomorphicStrings checker = new D103IsomorphicStrings();
+        D1IsomorphicStrings checker = new D1IsomorphicStrings();
 
         String s1 = "egg";
         String t1 = "add";

@@ -7,7 +7,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-public class D401AddTwoNumberLinkedList {
+public class D4AddTwoNumberLinkedList {
     
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
@@ -33,7 +33,7 @@ public class D401AddTwoNumberLinkedList {
     }    
 
     public static void main(String[] args) {
-        D401AddTwoNumberLinkedList Nikita = new D401AddTwoNumberLinkedList();
+        D4AddTwoNumberLinkedList Nikita = new D4AddTwoNumberLinkedList();
         
         // Creating first linked list: 2 -> 4 -> 3 (represents number 342)
         ListNode l1 = new ListNode(2);

@@ -6,7 +6,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-public class D302RemoveDuplicateShortedList {
+public class D3RemoveDuplicateShortedList {
 
     // Recursive method to remove duplicates completely
     public ListNode deleteDuplicates(ListNode head) {
@@ -34,7 +34,7 @@ public class D302RemoveDuplicateShortedList {
     }
 
     public static void main(String[] args) {
-        D302RemoveDuplicateShortedList solver = new D302RemoveDuplicateShortedList();
+        D3RemoveDuplicateShortedList solver = new D3RemoveDuplicateShortedList();
 
         // Create example list: 1->2->3->3->4->4->5
         ListNode head = new ListNode(1);
